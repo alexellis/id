@@ -22,7 +22,7 @@ jobs:
         run: env
       - name: Get CLI
         run: |
-          curl -sLS -O https://cli.openfaas.com | sudo sh
+          curl -sLS https://cli.openfaas.com | sudo sh
           faas-cli pro enable
           faas-cli validate
 
