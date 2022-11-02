@@ -25,5 +25,5 @@ jobs:
           curl -sLS https://cli.openfaas.com | sudo sh
           faas-cli plugin get pro
           faas-cli pro enable
-          faas-cli validate
+          faas-cli pro validate
 
