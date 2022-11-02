@@ -22,9 +22,7 @@ jobs:
         run: env
       - name: Get CLI
         run: |
-          curl -sLS -O https://fcli.exit.o6s.io/faas-cli
-          chmod +x ./faas-cli
-          
-          ./faas-cli pro enable
-          ./faas-cli build
+          curl -sLS -O https://cli.openfaas.com | sudo sh
+          faas-cli pro enable
+          faas-cli validate
 
